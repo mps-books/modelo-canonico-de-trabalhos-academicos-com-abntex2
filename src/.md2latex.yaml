@@ -2,6 +2,7 @@ find_by:
   name: main.md
   work_dir: src
   
+root_dir: "/github/workspace"
 dst: "../latex/partes/textual.tex"
 joined: "main_joined.md"
 latex:
