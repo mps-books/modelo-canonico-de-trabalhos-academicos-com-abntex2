@@ -1,6 +1,6 @@
 find_by:
   name: main.md
-  work_dir: .
+  work_dir: src
   
 dst: "../latex/partes/textual.tex"
 joined: "main_joined.md"
