@@ -5,7 +5,7 @@ find_by:
 src: "main.md"
 work_dir: "%D%"
 dst: "/latex/partes/textual.tex"
-joined: "main_joined.md"
+joined: ""
 latex:
   envs:
     quotation: squote
