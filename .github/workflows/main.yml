@@ -23,7 +23,7 @@ jobs:
       - name: markdown to latex
         uses: docker://moisespsena/md2latex:latest
         with:
-          args: --config /github/workspace/src/.md2latex.yaml
+          args: --config /github/workspace/src/.md2latex.yaml -w /github/workspace
           
       - name: Commit and push changes
         run: |
