@@ -1,89 +1,76 @@
-% ----------------------------------------------------------
-% Introdução (exemplo de capítulo sem numeração, mas presente no Sumário)
-% ----------------------------------------------------------
 \chapter*[Introdução]{Introdução}
 \addcontentsline{toc}{chapter}{Introdução}
-% ----------------------------------------------------------
+Unnumered chapter example, but present into summary.
 
-\input{latex/partes/introducao}
+ab“cd”. ef"g h".
+tes’s ‘teste asd’.
 
+\chapter*[Introdução 2]{Introdução 2}
+Unnumered chapter example, but not present into summary.
 
-% ----------------------------------------------------------
-% PARTE
-% ----------------------------------------------------------
-\part{Preparação da pesquisa}
-% ----------------------------------------------------------
+\chapter{Section1}
+Some \emph{Markdown} text.
 
-% ---
-% Capitulo com exemplos de comandos inseridos de arquivo externo 
-% ---
-%\include{abntex2-modelo-include-comandos}
-% ---
+\chapter{Quotes}
+\begin{squote}{Author}
+teste
+\end{squote}
 
-% ----------------------------------------------------------
-% PARTE
-% ----------------------------------------------------------
-\part{Referenciais teóricos}
-% ----------------------------------------------------------
+the raw paragraph code.
 
-% ---
-% Capitulo de revisão de literatura
-% ---
-\chapter{Lorem ipsum dolor sit amet}
-% ---
+\section{Part}
+part content
 
-% ---
-\section{Aliquam vestibulum fringilla lorem}
-% ---
+\section{Subsection}
+Foobar.
 
-\lipsum[1]
+\section{Tables}
+\begin{center}
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{a} & \textbf{b} & \textbf{c} \\
+\hline
+1 s s & 3 t t & 2 r r \\ \hline
+4 & 6 & 5 \\
+\hline
+\end{tabular}
+\end{center}
 
-\lipsum[2-3]
+\begin{center}
+\begin{tabular}{l|l|l}
+\textbf{a} & \textbf{b} & \textbf{c} \\
+\hline
+1 s s & 3 t t & 2 r r \\ \hline
+4 & 6 & 5 \\
+\end{tabular}
+\end{center}
 
-% ----------------------------------------------------------
-% PARTE
-% ----------------------------------------------------------
-\part{Resultados}
-% ----------------------------------------------------------
+\begin{center}
+\begin{tabular}{l|l|l}
+\textbf{a} & \textbf{b} & \textbf{c} \\
+\hline
+1 s s & 3 t t & 2 r r \\
+4 & 6 & 5 \\
+\end{tabular}
+\end{center}
 
-% ---
-% primeiro capitulo de Resultados
-% ---
-\chapter{Lectus lobortis condimentum}
-% ---
+\begin{center}
+\begin{tabular}{lll}
+\textbf{a} & \textbf{b} & \textbf{c} \\
+\hline
+1 s s & 3 t t & 2 r r \\ \hline
+4 & 6 & 5 \\
+\end{tabular}
+\end{center}
 
-% ---
-\section{Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-posuere cubilia Curae}
-% ---
+\begin{center}
+\begin{tabular}{|lll|}
+\hline
+\textbf{a} & \textbf{b} & \textbf{c} \\
+\hline
+1 s s & 3 t t & 2 r r \\
+4 & 6 & 5 \\
+\hline
+\end{tabular}
+\end{center}
 
-\lipsum[21-22]
-
-% ---
-% segundo capitulo de Resultados
-% ---
-\chapter{Nam sed tellus sit amet lectus urna ullamcorper tristique interdum
-elementum}
-% ---
-
-% ---
-\section{Pellentesque sit amet pede ac sem eleifend consectetuer}
-% ---
-
-\lipsum[24]
-
-% ----------------------------------------------------------
-% Finaliza a parte no bookmark do PDF
-% para que se inicie o bookmark na raiz
-% e adiciona espaço de parte no Sumário
-% ----------------------------------------------------------
-\phantompart
-
-% ---
-% Conclusão (outro exemplo de capítulo sem numeração e presente no sumário)
-% ---
-\chapter*[Conclusão]{Conclusão}
-\addcontentsline{toc}{chapter}{Conclusão}
-% ---
-
-\lipsum[31-33]

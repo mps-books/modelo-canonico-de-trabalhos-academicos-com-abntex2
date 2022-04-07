@@ -1,0 +1,19 @@
+\usepackage{blindtext}
+\usepackage[most]{tcolorbox}
+\definecolor{squote-gray}{gray}{0.5}
+
+\tcbuselibrary{skins}
+
+% Variant using a `minipage`-style boxing technique (this allows
+% multiple lines, \tcblower, etc.)
+\newtcolorbox{squote}[2][]{
+    grow to left by=-1.3cm,
+    grow to right by=-0.5cm,
+    title={\raggedleft\small -- #2},
+    attach boxed title to bottom right,
+    flip title={interior hidden},
+    boxed title style={empty,boxrule=0.5mm},
+    coltitle=black!50!black,
+    fontupper=\itshape,
+    enhanced, frame hidden, borderline west = {1pt}{0pt}{squote-gray,solid}
+}
